@@ -12,6 +12,11 @@ public class Calculator {
     }
 
     public int division(int a, int b) {
-        return a / b;
+        try {
+            return a / b;
+        } catch (ArithmeticException e) {
+            System.out.println("Exception: can't " + e.getMessage());
+            return -1;
+        }
     }
 }
