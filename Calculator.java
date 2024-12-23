@@ -4,6 +4,7 @@ public class Calculator {
     }
 
     public int subtraction(int a, int b) {
+        System.out.println(a + " - " + b);
         return a - b;
     }
 
